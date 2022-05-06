@@ -2,7 +2,7 @@ function [x, U] = gauss_elim(A,b)
     for i=1:length(A)
         [val, ind]=max(abs(A(i:end,i)))
         if val<eps
-            error("singular");
+            error("I sense something singular about you ~ Solair of Astora, age of fire");
         end
         ind=ind-1+i;
         tmp=A(i,:);
